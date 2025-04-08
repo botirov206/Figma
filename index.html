@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DooPet - Корм для собак Good Dog Reward</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Matīsas inovads, LV-4877, Латвия</span>
+                </div>
+            </div>
+            <div class="top-bar-right">
+                <div class="contact-info">
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@doopet.com</span>
+                    </div>
+                    <div class="phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+371 29840140</span>
+                    </div>
+                </div>
+                <div class="user-actions">
+                    <div class="account">
+                        <i class="fas fa-user"></i>
+                        <span>Личный кабинет</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="wishlist">
+                        <i class="fas fa-heart"></i>
+                        <span>Желания</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <i class="fas fa-paw"></i>
+                    <span>DooPet</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Акции</a>
+                <a href="#" class="nav-link">О нас</a>
+                <a href="#" class="nav-link">Блог</a>
+                <a href="#" class="nav-link">Доставка и оплата</a>
+                <a href="#" class="nav-link">Контакты</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search and Catalog -->
+    <div class="search-section">
+        <div class="container">
+            <button class="catalog-btn">
+                <i class="fas fa-bars"></i>
+                Каталог
+            </button>
+            <div class="search-container">
+                <input type="text" placeholder="Поиск по сайту..." class="search-input">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <button class="cart-btn">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Товаров 2 (0.00€)</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="/" class="breadcrumb-item">
+                <i class="fas fa-home"></i>
+            </a>
+            <i class="fas fa-chevron-right breadcrumb-separator"></i>
+            <a href="/dogs" class="breadcrumb-item">Для собак</a>
+            <i class="fas fa-chevron-right breadcrumb-separator"></i>
+            <span class="breadcrumb-item active">Корм для собак Good Dog Reward</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="product-section">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="./image/product.png" alt="Good Dog Reward" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail active" >
+                            <img src="./image/product.png" alt="Good Dog Reward Thumbnail 1">
+                        </div>
+                        <div class="thumbnail" >
+                            <img src="./image/product.png" alt="Good Dog Reward Thumbnail 2">
+                        </div>
+                        <div class="thumbnail" >
+                            <img src="./image/product.png" alt="Good Dog Reward Thumbnail 3">
+                        </div>
+                        <div class="thumbnail" >
+                            <img src="./image/product.png" alt="Good Dog Reward Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Корм для собак Good Dog Reward</h1>
+                    
+                    <div class="product-price">
+                        <span class="current-price">3.12€</span>
+                        <span class="old-price">4.10€</span>
+                    </div>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus" id="decrease-quantity">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <input type="text" value="2" class="quantity-input" id="quantity-input">
+                            <button class="quantity-btn plus" id="increase-quantity">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <button class="add-to-cart-btn" id="add-to-cart">
+                            Добавить в корзину
+                        </button>
+                        <button class="wishlist-btn" id="add-to-wishlist">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Артикул:</span>
+                            <span class="detail-value">LEDF01</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Производитель:</span>
+                            <span class="detail-value">BEEF</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Наличие:</span>
+                            <span class="detail-value in-stock">Есть в наличии</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Цена:</span>
+                            <span class="detail-value">2.55€</span>
+                        </div>
+                    </div>
+
+                    <div class="product-buttons">
+                        <button class="question-btn">
+                            <i class="fas fa-comment"></i>
+                            Задать вопрос
+                        </button>
+                        <button class="delivery-info-btn">
+                            <i class="fas fa-info-circle"></i>
+                            Информация о доставке
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <div class="product-description" style="border: 1px solid gray; border-radius: 10px; padding: 20px; margin-top: 20px;">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="description">Описание</button>
+                    <button class="tab-btn" data-tab="reviews">Отзывы (2)</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <p class="description-text">
+                            Наш корм для собак - это забота о вашем верном спутнике, выраженная в каждой грануле. Мы создаем уникальные рецепты, богатые натуральными ингредиентами, которые специально разработаны для удовлетворения потребностей вашей собаки в питательных веществах и вкусе. Наши продукты вдохновлены природой и разработаны с учетом здоровья и благополучия вашего пушистого друга. Каждая упаковка - это обещание качества и заботы. Подарите вашей собаке лучший опыт питания, который она заслуживает, с нашим кормом для собак.
+                        </p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <strong>Натуральные ингредиенты:</strong> 
+                                Наш корм для собак содержит только натуральные ингредиенты, без искусственных красителей, ароматизаторов или консервантов. Мы гордимся тем, что предлагаем вашей собаке высококачественное питание, которое способствует ее здоровью и благополучию.
+                            </li>
+                            <li>
+                                <strong>Баланс питательных веществ:</strong> 
+                                Наши рецепты разработаны с учетом оптимального баланса белков, углеводов, жиров и важных витаминов и минералов. Это помогает поддерживать здоровое тело.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Similar Products -->
+            <div class="similar-products">
+                <div class="section-header">
+                    <div class="paw-icon">
+                        <i class="fas fa-paw"></i>
+                    </div>
+                    <h2 class="section-title">Похожие товары</h2>
+                </div>
+            
+                <div class="product-grid">
+            
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./image/product-1.png" alt="Good Dog Reward">
+                        </div>
+            
+                        <div class="product-content">
+                            <h3 class="product-name">Корм для собак Good Dog Reward</h3>
+                            <div class="product-price">
+                                <span class="current-price">3.12€</span>
+                                <span class="old-price">4.10€</span>
+                            </div>
+            
+                            <div class="product-actions" >
+                                <div class="quantity-selector" style="width: 100%;" >
+                                    <button class="quantity-btn minus">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" value="2" class="quantity-input">
+                                    <button class="quantity-btn plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                                <button class="cart-btn" style="width: 100%;">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter" style="padding-bottom: 0px;">
+        <div class="container" >
+            <div class="newsletter-content" >
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Будьте в курсе</h2>
+                    <h3 class="newsletter-subtitle">наших акций и новостей</h3>
+                    <p class="newsletter-description">
+                        Подпишитесь на рассылку и первым узнавайте о скидках
+                    </p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Ваш email" class="newsletter-input" id="newsletter-email" required>
+                        <button type="submit" class="newsletter-btn">Отправить</button>
+                    </form>
+                    <div class="form-message" id="newsletter-message"></div>
+                </div>
+                <div class="newsletter-image" style="margin-bottom: 0px;">
+                    <img src="./image/dog.png" alt="Dog">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-paw"></i>
+                        <span>DooPet</span>
+                    </div>
+                    <p class="footer-description">
+                        Мы - лидеры в области представления высококачественного товара для вашего домашнего любимца. Наша миссия - обеспечить заботу и благополучие вашего питомца через лучшие продукты для него.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Товары DOOPET</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Корм для котов</a></li>
+                        <li><a href="#">Корм для собак</a></li>
+                        <li><a href="#">Консервы для собак</a></li>
+                        <li><a href="#">Консервы для котов</a></li>
+                        <li><a href="#">Лакомства для собак</a></li>
+                        <li><a href="#">Наполнители туалетов</a></li>
+                        <li><a href="#">Контейнеры для переноски</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Информация</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Политика конфиденциальности и условия пользования</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Контакты</h3>
+                    <ul class="footer-contacts">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Matīsas inovads, LV-4877, Латвия</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@doopet.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+371 29840140</span>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" class="social-link facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Notification -->
+    <div class="notification" id="cart-notification">
+        <div class="notification-content">
+            <i class="fas fa-check-circle"></i>
+            <span>Товар добавлен в корзину!</span>
+        </div>
+    </div>
+
+    <!-- Wishlist Notification -->
+    <div class="notification" id="wishlist-notification">
+        <div class="notification-content">
+            <i class="fas fa-heart"></i>
+            <span>Товар добавлен в список желаний!</span>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="mobile-logo">
+                <i class="fas fa-paw"></i>
+                <span>DooPet</span>
+            </div>
+            <button class="mobile-menu-close" id="mobile-menu-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="mobile-menu-content">
+            <ul class="mobile-menu-links">
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu-account">
+                <a href="#" class="mobile-account-link">
+                    <i class="fas fa-user"></i>
+                    <span>Личный кабинет</span>
+                </a>
+                <a href="#" class="mobile-wishlist-link">
+                    <i class="fas fa-heart"></i>
+                    <span>Желания</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card Template -->
+    <template id="product-card-template">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="" alt="">
+                <div class="product-badges"></div>
+            </div>
+            <div class="product-content">
+                <h3 class="product-name"></h3>
+                <div class="product-price">
+                    <span class="current-price"></span>
+                    <span class="old-price"></span>
+                </div>
+                <div class="product-actions">
+                    <div class="quantity-selector small">
+                        <button class="quantity-btn minus">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="text" value="1" class="quantity-input">
+                        <button class="quantity-btn plus">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <button class="cart-btn-small">В корзину</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <script src="main.js"></script>
+</body>
+</html>
