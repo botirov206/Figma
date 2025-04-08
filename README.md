@@ -19,5 +19,5 @@ DooPet is a modern and responsive e-commerce website designed for selling pet pr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/doopet.git
+   git clone https://github.com/botirov206/Figma.git
 
